@@ -4,6 +4,7 @@ date: "2018-12-19"
 author: "Lenz Gschwendtner"
 avatar: "lenz"
 draft: false
+headerImage: "kfos_dark.png"
 ---
 
 This is good new home for all the random scattered posts and thoughts I have

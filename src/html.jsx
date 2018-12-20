@@ -34,10 +34,10 @@ export default class HTML extends React.Component {
         </head>
         <body className="system-sans-serif">
           <nav className="db dt-l w-100 border-box pa3 ph5-l">
-            <Link to="/"  className="link dim dark-gray f6 f5-l dib mr3 mr4-l">home</Link>
             <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
+              <Link to="/"      className="link dim dark-gray f6 f5-l dib mr3 mr4-l">home</Link>
               <Link to="/blog"  className="link dim dark-gray f6 f5-l dib mr3 mr4-l">blog</Link>
-              <Link to="/about" className="link dim dark-gray f6 f5-l dib">about</Link>
+              <Link to="/about" className="link dim dark-gray f6 f5-l dib mr3 mr4-l">about</Link>
             </div>
           </nav>
           <div
