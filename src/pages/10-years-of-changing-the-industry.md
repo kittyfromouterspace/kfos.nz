@@ -3,7 +3,7 @@ title: "10 years of changing the industry"
 date: "2018-12-20"
 author: "Lenz Gschwendtner"
 avatar: "lenz"
-draft: true
+draft: false
 headerImage: "timo_paul_lenz.jpg"
 ---
 
