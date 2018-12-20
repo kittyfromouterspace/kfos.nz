@@ -30,35 +30,20 @@ export default () => (
       `
     }
     render={data => (
-      <div className="overflow-auto">
-        <table className="f6 w-100 mw8 center" cellSpacing="0">
-          <tbody className="lh-copy">
-            {data.allMarkdownRemark.edges.map(({ node }) => (
-              <tr key={node.id}>
-                <td className="pv3 pr3 bb b--black-20">
-                  <Avatar alt={node.frontmatter.author} src={node.frontmatter.avatar} className="ba b--black-10 db br-100 w2 w3-ns h2 h3-ns"/>
-                </td>
-                <td className="pv3 pr3 bb b--black-20">
-                  <Link to={node.fields.slug} className="no-underline">
-                    <h1 className="f6 f5-ns fw6 lh-title black mv0">{node.frontmatter.title}</h1>
-                    <h2 className="f6 fw4 mt0 mb0 black-60">{node.frontmatter.date}</h2>
-                  </Link>
-                </td>
-                <td className="pv3 pr3 bb b--black-20">
-                  <p className="f5 lh-copy measure-narrow">
-                    {node.excerpt}
-                  </p>
-                </td>
-                <td className="pv3 pr3 bb b--black-20">
-                  <Link to={node.fields.slug} className="no-underline">
-                    <span className="f6 fw4 lh-copy mt0 mb0 black-60">{node.timeToRead}min to read</span>
-                  </Link>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+			<ul className="list pl0 mt0 measure center">
+				{data.allMarkdownRemark.edges.map(({ node }) => (
+				<li key={node.id}
+					className="flex items-center lh-copy pa3 ph0-l bb b--black-10">
+					<Avatar alt={node.frontmatter.author} src={node.frontmatter.avatar} className="w2 h2 w3-ns h3-ns br-100"/>
+					<div className="pl3 flex-auto">
+						<Link to={node.fields.slug} className="no-underline">
+              <h1 className="f6 f5-ns fw6 lh-title black mv0">{node.frontmatter.title}</h1>
+              <h2 className="f6 fw4 mt0 mb0 black-60">{node.frontmatter.date}</h2>
+						</Link>
+					</div>
+				</li>
+				))}
+			</ul>
     )}
   />
 )
