@@ -4,7 +4,7 @@ date: "2018-12-20"
 author: "Lenz Gschwendtner"
 avatar: "lenz"
 draft: true
-headerImage: "images/timo_paul_lenz.jpg"
+headerImage: "timo_paul_lenz.jpg"
 ---
 
 This post was originally published on the iwantmyname blog:
