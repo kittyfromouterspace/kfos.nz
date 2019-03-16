@@ -1,5 +1,4 @@
 import React from 'react'
-import Blog from "../components/blog"
 import logo from "../logo.jpg"
 
 export default () => {
@@ -11,12 +10,9 @@ export default () => {
         </div>
         <div className="mt4 tc tl-ns ph3">
           <h1 className="f3 f1-l fw2 mb3 mt4 mt0-ns">kitty from outer space</h1>
-          <h2 className="f5 f3-l fw1 mb4 mb5-l lh-title">right size impact companies and consulting<br />since 2007</h2>
+          <h2 className="f5 f3-l fw1 mb4 mb5-l lh-title">impact companies and consulting<br />since 2007</h2>
         </div>
       </section>
-      <article className="cf ph3 ph5-ns pv5">
-        <Blog />
-      </article>
     </div>
   )
 }
